@@ -3,76 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的静态站点示例</title>
+  <title>LUWIN 线性传动演示站</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- 顶部导航 -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">MyStaticSite</div>
+      <div class="logo">LUWIN Demo</div>
       <nav class="nav">
         <a href="#hero">首页</a>
-        <a href="#features">特点</a>
-        <a href="#about">关于</a>
+        <a href="#products">产品中心</a>
+        <a href="#support">技术支持</a>
+        <a href="#about">关于我们</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <!-- 主视觉横幅（简化版轮播风格） -->
     <section id="hero" class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
-          <h1>一行代码，发布到云端</h1>
-          <p>这是一个用于演示 GitHub + Cloudflare Pages 部署流程的简单静态网页，你可以在几分钟内完成上线。</p>
+          <p class="hero-label">线性传动 · 导轨夹紧演示页面</p>
+          <h1>稳定锁紧，每一次精确定位</h1>
+          <p class="hero-sub">本页面仅为前端部署示例，不代表真实产品与参数。你可以在此基础上自由修改文案和图片，练习 GitHub + Cloudflare Pages 部署流程。</p>
           <div class="hero-actions">
-            <a class="btn primary" href="#features">查看特点</a>
-            <a class="btn secondary" href="#about">了解部署流程</a>
+            <a class="btn primary" href="#products">查看示例产品</a>
+            <a class="btn secondary" href="#support">了解技术支持</a>
           </div>
+        </div>
+        <div class="hero-panel">
+          <div class="hero-chip">DEMO</div>
+          <h2>导轨夹紧模块示意</h2>
+          <ul>
+            <li>适合作为工业官网风格练习</li>
+            <li>响应式布局，兼容桌面与移动端</li>
+            <li>结构清晰：导航 / 横幅 / 产品 / 支持 / 页脚</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="features" class="section">
+    <!-- 产品示例区 -->
+    <section id="products" class="section section-alt">
       <div class="container">
-        <h2>这个示例页面有什么？</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>纯静态</h3>
-            <p>只包含 HTML 和 CSS，没有任何构建步骤，非常适合第一次部署练习。</p>
-          </div>
-          <div class="card">
-            <h3>响应式布局</h3>
-            <p>在手机和电脑上都能良好显示，体现真实项目结构。</p>
-          </div>
-          <div class="card">
-            <h3>可自由扩展</h3>
-            <p>你可以在此基础上添加更多页面、组件和样式，持续部署。</p>
-          </div>
+        <div class="section-head">
+          <h2>示例产品中心</h2>
+          <p>以下内容为虚构产品，仅用于排版示意。你可以替换为自己的产品图片与参数。</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <header>
+              <h3>手动夹紧模块 HM 系列</h3>
+              <p class="product-tag">手动型 · 轻载</p>
+            </header>
+            <ul class="product-list">
+              <li>适用于小型线性导轨和测试平台。</li>
+              <li>拨杆式操作，结构直观，易于维护。</li>
+              <li>适合作为展示页面中的基础型号。</li>
+            </ul>
+            <a href="#support" class="product-link">了解选型建议</a>
+          </article>
+
+          <article class="product-card">
+            <header>
+              <h3>气动夹紧模块 PM 系列</h3>
+              <p class="product-tag">气动型 · 高频动作</p>
+            </header>
+            <ul class="product-list">
+              <li>模拟高速生产线上的自动夹紧结构。</li>
+              <li>可与传感器配合，实现状态监测示意。</li>
+              <li>在页面中可延伸展示 I/O 接线图等内容。</li>
+            </ul>
+            <a href="#support" class="product-link">查看应用场景</a>
+          </article>
+
+          <article class="product-card">
+            <header>
+              <h3>电动夹紧模块 EM 系列</h3>
+              <p class="product-tag">电动型 · 精密定位</p>
+            </header>
+            <ul class="product-list">
+              <li>用于模拟高精度定位与锁紧需求。</li>
+              <li>可以扩展为“伺服控制示例”板块。</li>
+              <li>适合在页面中展示参数表和下载文档链接。</li>
+            </ul>
+            <a href="#support" class="product-link">规划资料下载区</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section section-alt">
+    <!-- 技术支持与资料下载示意 -->
+    <section id="support" class="section support-section">
+      <div class="container support-inner">
+        <div class="support-block">
+          <h2>技术支持示例</h2>
+          <p>你可以在真实项目中，把这里替换为客服电话、邮箱、在线客服入口等信息。本示例只展示布局结构。</p>
+          <div class="support-items">
+            <div class="support-card">
+              <h3>联系方式区</h3>
+              <p>常见展示：服务热线、技术邮箱、工作时间等。</p>
+            </div>
+            <div class="support-card">
+              <h3>资料下载区</h3>
+              <p>可放置：产品样本 PDF、3D 模型、安装说明书等下载链接。</p>
+            </div>
+          </div>
+        </div>
+        <aside class="support-sidebar">
+          <div class="qr-placeholder">
+            <span><img src="https://img.luwin.org/file/1770121661628_weixin.jpg" alt="weixin.jpg" width=100% /></span> 
+          </div>
+          <p class="qr-text">扫码联系我们</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 关于我们 / 说明 -->
+    <section id="about" class="section">
       <div class="container">
-        <h2>部署流程一览</h2>
+        <div class="section-head">
+          <h2>关于本演示站</h2>
+          <p>本页面旨在帮助你练习：使用 Git 管理静态页面代码，并通过 GitHub + Cloudflare Pages 实现自动化部署。</p>
+        </div>
         <ol class="steps">
-          <li>在本地编辑这个页面，并用 Git 管理代码。</li>
-          <li>把代码推送到 GitHub 仓库。</li>
-          <li>在 Cloudflare Pages 连接这个 GitHub 仓库并部署。</li>
-          <li>以后只要 push 代码，Cloudflare 会自动重新部署。</li>
+          <li>在本地编辑 HTML / CSS，实现你想要的布局与风格。</li>
+          <li>使用 Git 提交并推送到 GitHub 仓库。</li>
+          <li>在 Cloudflare Pages 连接仓库，完成构建和部署。</li>
+          <li>后续只需 push 代码，页面即可自动更新上线。</li>
         </ol>
       </div>
     </section>
   </main>
 
+  <!-- 页脚 -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <span>© <span id="year"></span> MyStaticSite. 部署演示用站点。</span>
+      <span>© <span id="year"></span> LUWIN Demo Site · 仅供前端与部署练习使用。</span>
     </div>
   </footer>
 
   <script>
-    // 简单的脚本：动态显示年份
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
